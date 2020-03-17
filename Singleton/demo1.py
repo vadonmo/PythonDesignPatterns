@@ -1,7 +1,12 @@
+'''
+单例模式
+'''
+
+
 class Singleton(object):
     def __new__(cls):
         print(dir(cls))
-        if not hasattr(cls, 'instance'): # 判断有没有 instance 属性
+        if not hasattr(cls, 'instance'):  # 判断有没有 instance 属性
             cls.instance = super(Singleton, cls).__new__(cls)
         return cls.instance
 

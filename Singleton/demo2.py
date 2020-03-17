@@ -1,3 +1,8 @@
+'''
+懒汉单例模式
+'''
+
+
 class Singleton(object):
     __instance = None
     '''
